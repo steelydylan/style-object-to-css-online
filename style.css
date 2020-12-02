@@ -1,0 +1,33 @@
+.flex {
+  height: calc(100vh - 100px);
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+}
+
+.flex-item {
+  border: 1px solid #efefef;
+  height: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.source {
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+
+
+.target {
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
