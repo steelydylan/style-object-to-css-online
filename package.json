@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "cssbeautify": "^0.3.1",
+    "csso": "^4.2.0",
     "object-style": "^1.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

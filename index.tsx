@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { render } from "react-dom"
 import cssBeautify from "cssbeautify"
+import csso from 'csso'
 import objectStyle from './object-style'
 
 const Converter = () => {
@@ -9,7 +10,7 @@ const Converter = () => {
   const handleClick = () => {
     const { value } = textareaRef.current
     const { css } = objectStyle(eval(`(${value})`))
-    setResult(cssBeautify(css))
+    setResult(cssBeautify(csso.minify(css).css))
   }
   return (<div className="flex">
     <div className="flex-item">

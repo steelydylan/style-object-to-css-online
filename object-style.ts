@@ -3,7 +3,7 @@ const hyphenate = s =>
 
 const createRule = (className: string, key: string, value: string | number, children: string, media: string) => {
   const selector = '.' + className + children
-  const rule = selector + '{' + hyphenate(key) + ':' + value + '}'
+  const rule = selector + '{' + hyphenate(key) + ':' + value + '; }'
   if (!media) return rule
   return media + '{' + rule + '}'
 }
