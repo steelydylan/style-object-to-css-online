@@ -7,13 +7,13 @@
 }
 
 .flex-item {
-  border: 1px solid #efefef;
   height: 100%;
   flex: 1;
   position: relative;
 }
 
 .source {
+  border: 1px solid #666;
   height: 100%;
   display: block;
   width: 100%;
@@ -21,6 +21,7 @@
 
 
 .target {
+  border: 1px solid #666;
   height: 100%;
   display: block;
   width: 100%;
@@ -28,6 +29,6 @@
 
 .btn {
   position: absolute;
-  top: 5px;
+  top: 30px;
   right: 5px;
 }
